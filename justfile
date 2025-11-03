@@ -2,7 +2,7 @@
 default: dev
 
 # Build a specified profile.
-build profile:
+build profile="dev":
     cargo build --profile {{ profile }}
 
 # Build the "dev" profile.
@@ -11,13 +11,17 @@ dev: (build "dev")
 # Build the "release" profile.
 release: (build "release")
 
-# Run the program using Cargo.
-run:
-    cargo run
-
 # Trigger all tests.
 test:
     cargo test
+
+# Trigger all tests, plus allow access to stdout.
+test-out:
+    cargo test -- --nocapture
+
+# Trigger Clippy.
+lint:
+    cargo clippy
 
 # Test, and then generate the documentation.
 doc:
