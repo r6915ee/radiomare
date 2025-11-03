@@ -15,7 +15,6 @@
 
 use bevy::prelude::*;
 use crashlog::cargo_metadata;
-use funksysbevy::FunkSystemPlugin;
 use log::info;
 
 /// Entry point for the program.
@@ -34,7 +33,5 @@ fn main() {
 
     clang_log::init(log::Level::Warn, "funksystem");
     info!("initializing game");
-    App::new()
-        .add_plugins((DefaultPlugins, FunkSystemPlugin))
-        .run();
+    App::new().add_plugins(DefaultPlugins).run();
 }

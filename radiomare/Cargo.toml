@@ -1,17 +1,16 @@
 [package]
-name = "funksystem"
+name = "radiomare"
 authors = ["r6915ee <astergthefourth@gmail.com>"]
-description = "Alternative fangame engine for Friday Night Funkin'"
+description = "One MANIAcal rhythm game"
 version = "0.1.0"
 license = "MIT"
-repository = "https://codeberg.org/r6915ee/funksystem"
+repository = "https://codeberg.org/r6915ee/radiomare"
 categories = ["games", "command-line-utilities"]
 keywords = ["game", "games", "mod"]
 edition = "2024"
 
 [dependencies]
-funksyscore = { version = "0.1.0", path = "../funksyscore" }
-funksysbevy = { version = "0.1.0", path = "../funksysbevy" }
+radiocore = { version = "0.1.0", path = "../radiocore" }
 bevy = { version = "0.17.2", default-features = false, features = [
   "bevy_asset",
   "bevy_audio",
@@ -32,8 +31,7 @@ clang_log = "2.1.2"
 crashlog = "0.1.5"
 
 [dev-dependencies]
-funksyscore = { version = "0.1.0", path = "../funksyscore" }
-funksysbevy = { version = "0.1.0", path = "../funksysbevy" }
+radiocore = { version = "0.1.0", path = "../radiocore" }
 
 [features]
 default = ["fast-compile"]

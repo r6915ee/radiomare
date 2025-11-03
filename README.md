@@ -1,40 +1,27 @@
 <div align="center">
-  <h1><img src="assets/logo.png" alt="'FunkSystem' Logo"></h1>
+  <h1><img src="assets/logo.png" alt="'RadioMare' Logo"></h1>
 </div>
 
 > [!NOTE]
 > The following lists available mirrors of the repository:
-> * [Codeberg](https://codeberg.org/r6915ee/funksystem) (Official repository,
+> * [Codeberg](https://codeberg.org/r6915ee/radiomare) (Official repository,
 > contribute by sending issues and pull requests here!)
-> * [GitHub](https://github.com/r6915ee/funksystem)
+> * [GitHub](https://github.com/r6915ee/radiomare)
 
 > [!CAUTION]
-> FunkSystem is still in the early stages of development. Contributions are
+> RadioMare is still in the early stages of development. Contributions are
 > welcome under the MIT license.
 >
-> [Codeberg projects](https://codeberg.org/r6915ee/funksystem/projects) is used
+> [Codeberg projects](https://codeberg.org/r6915ee/radiomare/projects) is used
 > to detail what needs to be done for a release.
 
-**FunkSystem** is a fangame engine for
-[Friday Night Funkin'](https://funkin.me/), a well-known rhythm game, that aims
-to primarily be data-oriented; that is, FunkSystem introduces the following
-differences from most other fangame engines for Friday Night Funkin':
+**RadioMare** is a mania-type rhythm game that primarily possesses the
+following features:
 
-* FunkSystem uses the **Entity Component System** paradigm, short for **ECS**.
-  Entities comprise of components, components define data, and systems operate
-  on entities with certain components. This allows the game to rely on
-  composition primarily instead of inheritance, allowing easier modification
-  for most things.
-* Unlike most other engines, FunkSystem is made with
-  [Rust](https://rust-lang.org/), which allows it to make use of the advantages
-  of the ecosystem. Alongside this, FunkSystem uses the
-  [Bevy](https://bevy.org/) engine internally.
-* FunkSystem is designed to rely on a client architecture by being modular.
-  This allows multiple clients to be built, allowing custom clients to be
-  built more properly.
-* Most prior concepts, such as Sparrow Atlases and JSON, are discarded to aid
-  with the client architecture. However, utilities are available for migrating
-  certain assets.
+* RadioMare possesses a chart system that favors reusability for faster
+  development, going well with the **Entity Component System** paradigm.
+
+todo
 
 ## Building
 

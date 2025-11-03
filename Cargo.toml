@@ -1,5 +1,5 @@
 [workspace]
-members = ["funksystem", "funksyscore", "funksysbevy"]
+members = ["radiomare", "radiocore"]
 resolver = "3"
 
 [profile.dev]

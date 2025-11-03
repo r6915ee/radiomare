@@ -1,10 +1,10 @@
 [package]
-name = "funksyscore"
-description = "Core asset handling for FunkSystem"
+name = "radiocore"
+description = "Main asset handler for RadioSystem"
 authors = ["r6915ee <astergthefourth@gmail.com>"]
 license = "MIT"
 categories = ["games"]
-repository = "https://codeberg.org/r6915ee/funksystem"
+repository = "https://codeberg.org/r6915ee/radiomare"
 keywords = ["fnf"]
 version = "0.1.0"
 edition = "2024"

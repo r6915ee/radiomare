@@ -11,6 +11,10 @@ dev: (build "dev")
 # Build the "release" profile.
 release: (build "release")
 
+# Run the program using Cargo.
+run:
+    cargo run
+
 # Trigger all tests.
 test:
     cargo test
