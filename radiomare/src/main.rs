@@ -32,5 +32,13 @@ fn main() {
 
     clang_log::init(log::Level::Warn, "radiomare");
     info!("initializing game");
-    App::new().add_plugins(DefaultPlugins).run();
+    App::new()
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            primary_window: Some(Window {
+                title: "RadioMare".into(),
+                ..default()
+            }),
+            ..default()
+        }))
+        .run();
 }
