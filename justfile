@@ -28,6 +28,10 @@ doc:
     cargo test --doc
     cargo doc --no-deps
 
+# Runs the program using Cargo.
+run:
+    cargo run
+
 # Trigger doc recipe, and open $HTTP_SERVER in target/doc.
 view-docs: doc
     ${HTTP_SERVER} target/doc
