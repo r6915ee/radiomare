@@ -1,9 +1,8 @@
-//! Main [FunkSystem](https://codeberg.org/r6915ee/funksystem/) client.
+//! Main [RadioMare](https://codeberg.org/r6915ee/radiomare/) client.
 //!
-//! **FunkSystem** is a fangame engine for [Friday Night
-//! Funkin'](https://funkin.me/) that relies on [Rust](https://rust-lang.org/)
-//! to provide a memory-safe, practical modding experience. It also has a
-//! client-based architecture that allows common engines to be built.
+//! **RadioMare** is a mania rhythm game that primarily leverages
+//! [Rust](https://rust-lang.org/) and [Bevy](https://bevy.org/) to provide
+//! a compatible program.
 //!
 //! This crate in specific is the main client, for which all libraries
 //! stored in the monorepo are built for.
@@ -31,7 +30,7 @@ fn main() {
     "
     );
 
-    clang_log::init(log::Level::Warn, "funksystem");
+    clang_log::init(log::Level::Warn, "radiomare");
     info!("initializing game");
     App::new().add_plugins(DefaultPlugins).run();
 }
