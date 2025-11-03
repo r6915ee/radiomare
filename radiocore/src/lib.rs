@@ -21,10 +21,6 @@
 ///
 /// * **Steps**: Steps are the primary unit of measurement for charts, and
 ///   are typically one fourth of a beat.
-/// * **Beats**: Beats are a secondary unit of measurement for charts, and
-///   are typically one fourth of a measure.
-/// * **Measures**: Measures are an additional unit of measurement for charts,
-///   and are typically distributed on their own.
 /// * **Hooks**: Hooks are assigned a certain step. When that step is reached,
 ///   then the hook is run, being used in conjunction with the other hooks at
 ///   that step; this is typically used to create an entity.
